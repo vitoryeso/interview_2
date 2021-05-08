@@ -18,7 +18,7 @@ from data_pipe import load
 
 batch_size = 32
 num_classes = 4
-epochs = 10
+epochs = 45
 data_augmentation = True
 num_predictions = 20
 save_dir = os.path.join(os.getcwd(), 'saved_models')
@@ -125,7 +125,7 @@ else:
 # Save model and weights
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
-model_path = os.path.join(save_dir, model_name + '2')
+model_path = os.path.join(save_dir, model_name)
 model.save(model_path)
 print('Saved trained model at %s ' % model_path)
 
