@@ -67,7 +67,7 @@ for image, filename in zip(images, file_names) :
         cv.imwrite('fixed/' + filename.split('.')[0] + '.png', imutils.rotate(image, 90))
 
 df = pd.DataFrame(zip(file_names, labels))
-df.to_csv('fixed.csv')
+df.to_csv('fixed.csv', index=False)
 
 
 
