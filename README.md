@@ -11,5 +11,10 @@
 ### "fix_data.py" get the trained model and fix the dataset 
 
 
+## possible improvements not tested
+### add some color changing in the data augmentation (HUE, gamma correction, etc)
+### test other network backbones
+### change the validation_data size
+
 
 
